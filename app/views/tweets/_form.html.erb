@@ -15,6 +15,11 @@
   </div>
 
   <div class="mb-3">
+    <%= form.label :image %>
+    <%= form.file_field :image %>
+  </div>
+
+  <div class="mb-3">
     <%= form.submit "Save", class: "btn btn-primary" %>
     <%= link_to "Cancel", tweets_path, class: "btn btn-secondary" %>
   </div>

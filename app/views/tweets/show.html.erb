@@ -4,6 +4,11 @@
   <div class="card">
     <div class="card-body">
       <p><%= @tweet.content %></p>
+      <% if @tweet.image.present? %>
+        <div class="my-3"> 
+          <%= image_tag @tweet.image, width: "150", height: "150" %>
+        </div>
+      <% end %>
       <%= link_to "Back", tweets_path, class: "btn btn-secondary" %>
     </div>
   </div>
